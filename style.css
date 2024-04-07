@@ -105,11 +105,13 @@ label {
   margin: 0px;
 }
 span {
+  height: 40px;
   color: var(--font-color);
   position: absolute;
   top: 30%;
   left: 10px;
   transition: 0.3s ease;
+  z-index: 1;
 }
 button {
   margin-top: 10px;
@@ -119,8 +121,16 @@ form label input:hover + span {
   left: 5px;
   font-size: 14px;
   font-weight: 600;
-  color: white;
+  color: var(--accent-color);
   transition: 0.3s;
+}
+span:hover {
+  top: -10px;
+  left: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--input-color);
+  opacity: 0.5;
 }
 
 .submit {
