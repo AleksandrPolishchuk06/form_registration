@@ -30,12 +30,18 @@
 }
 
 .befor_ {
-  display: inline;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-:where(.form) .title,
 .img {
-  display: inline;
-  margin-right: 11px;
+  padding-bottom: 8px;
+}
+.img_2 {
+  position: absolute;
+  top: 14.6px;
+  right: 290.9px;
 }
 
 .massage {
@@ -107,18 +113,22 @@ span {
 button {
   margin-top: 10px;
 }
-form label input:focus + span {
+form label input:hover + span {
   top: -10px;
+  left: 5px;
   font-size: 14px;
   font-weight: 600;
   color: white;
+  transition: 0.3s;
 }
+
 .submit {
   font-size: 16px;
   padding: 10px 124px;
   border-radius: 10px;
   background-color: var(--accent-color);
   color: var(--btn-color);
+  cursor: pointer;
 }
 .down_text {
   margin-top: 9px;
