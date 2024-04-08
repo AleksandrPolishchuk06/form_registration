@@ -27,6 +27,7 @@
   margin-bottom: 10px;
   line-height: 42px;
   font-weight: 600;
+  opacity: 0.5;
 }
 
 .befor_ {
@@ -105,7 +106,7 @@ label {
   margin: 0px;
 }
 span {
-  height: 40px;
+  height: 30px;
   color: var(--font-color);
   position: absolute;
   top: 30%;
@@ -123,13 +124,14 @@ form label input:hover + span {
   font-weight: 600;
   color: var(--accent-color);
   transition: 0.3s;
+  opacity: 0.7;
 }
 span:hover {
   top: -10px;
   left: 5px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--input-color);
+  color: var(--input-colorr);
   opacity: 0.5;
 }
 
@@ -139,6 +141,7 @@ span:hover {
   border-radius: 10px;
   background-color: var(--accent-color);
   color: var(--btn-color);
+  opacity: 0.8;
   cursor: pointer;
 }
 .down_text {
@@ -149,4 +152,5 @@ span:hover {
 }
 p a {
   color: #00bfff;
+  opacity: 0.5;
 }
