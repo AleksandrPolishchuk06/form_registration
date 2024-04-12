@@ -14,7 +14,6 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  
 }
 
 .form_body {
@@ -82,7 +81,7 @@ input {
   width: 100%;
   align-items: center;
   justify-content: center;
-  color:#ffffff80;
+  color: #ffffff80;
 }
 .name_box label {
   width: 151px;
@@ -96,7 +95,7 @@ label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .form_up label {
@@ -125,7 +124,7 @@ form label input:hover + span {
   left: 5px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--accent-color);
+  color: white;
   transition: 0.3s;
   opacity: 0.7;
 }
@@ -134,11 +133,20 @@ span:hover {
   left: 5px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--input-colorr);
+  color: white;
   opacity: 0.5;
 }
 
-.submit {
+.submit_d {
+  font-size: 16px;
+  padding: 10px 124px;
+  border-radius: 10px;
+  background-color: rgb(196, 137, 137);
+  color: var(--btn-color);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.submit_e {
   font-size: 16px;
   padding: 10px 124px;
   border-radius: 10px;
@@ -156,4 +164,36 @@ span:hover {
 p a {
   color: #00bfff;
   opacity: 0.5;
+}
+/* стилізація форми */
+input:placeholder-shown {
+  border: none !important;
+}
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid + span {
+  /* border: 3px solid rgb(98, 222, 106); */
+  display: none;
+}
+input:valid {
+  border: 1px solid greenyellow;
+}
+form:invalid {
+  .submit_e {
+    display: none;
+  }
+}
+form:valid {
+  .submit_d {
+    display: none;
+  }
+}
+input:invalid ~ btx {
+  display: contents;
+}
+
+input:hover {
+  box-shadow: 0 0 2px #7069b7, 0 0 5px #0136bd, 0 0 8px #f2f3f4, 0 0 8px #7cf008;
 }

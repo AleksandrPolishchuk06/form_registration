@@ -29,27 +29,56 @@
         <p class="massage">Signup now and get full access to our app.</p>
         <div class="name_box">
           <label>
-            <input class="input" type="text" placeholder="" />
+            <input
+              class="input"
+              type="text"
+              placeholder=""
+              required
+              pattern="^[а-яА-Я]+$"
+            />
             <span>Firstname</span>
           </label>
           <label>
-            <input class="input" type="text" placeholder="" />
+            <input class="input" type="text" placeholder="" required />
             <span>Lastname</span>
           </label>
         </div>
         <div class="form_up">
           <label for="">
-            <input class="input" type="email" /> <span>Email</span></label
+            <input
+              class="input"
+              type="email"
+              required
+              placeholder=""
+              pattern="^[a-zA-Z0-9._%+-]{6,24}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            />
+            <span>Email</span></label
           >
           <label for="">
-            <input class="input" type="password" /> <span>Password</span></label
+            <input
+              class="input"
+              type="password"
+              required
+              placeholder=""
+              pattern="^(?=.*[A-Z].*[A-Z]).{6,}$"
+            />
+            <span>Password</span></label
           >
-          <label for="">
-            <input class="input" type="password" />
-            <span>Confirm password</span></label
+          <label class="bg" for="">
+            <input
+              class="input"
+              type="password"
+              required
+              placeholder=""
+              pattern="^(?=.*[A-Z].*[A-Z]).{6,}$"
+            />
+            <span class="bg">Confirm password</span></label
           >
         </div>
-        <button class="submit">Submit</button>
+
+        <button disabled class="submit_d">Submit</button>
+
+        <button enabled class="submit_e">Submit</button>
 
         <p class="down_text">Already have an acount ? <a href="#">Signin</a></p>
       </div>
