@@ -190,9 +190,6 @@ form:valid {
     display: none;
   }
 }
-input:invalid ~ btx {
-  display: contents;
-}
 
 input:hover {
   box-shadow: 0 0 2px #7069b7, 0 0 5px #0136bd, 0 0 8px #f2f3f4, 0 0 8px #7cf008;
