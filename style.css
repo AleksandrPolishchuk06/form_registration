@@ -135,6 +135,7 @@ span:hover {
   font-weight: 600;
   color: white;
   opacity: 0.5;
+  text-shadow: 0 0 1px blue, 0 0 3px navy, 0 0 5px navajowhite;
 }
 
 .submit_d {
@@ -178,7 +179,7 @@ input:valid + span {
   display: none;
 }
 input:valid {
-  border: 1px solid greenyellow;
+  border: 1px solid rgb(3, 97, 3);
 }
 form:invalid {
   .submit_e {
@@ -192,5 +193,5 @@ form:valid {
 }
 
 input:hover {
-  box-shadow: 0 0 2px #7069b7, 0 0 5px #0136bd, 0 0 8px #f2f3f4, 0 0 8px #7cf008;
+  box-shadow: 0 0 3px #015bd0, 0 0 5px #049cef, 0 0 8px #80e596, 0 0 8px #0aace7;
 }
