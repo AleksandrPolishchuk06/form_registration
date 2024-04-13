@@ -167,6 +167,7 @@ p a {
   opacity: 0.5;
 }
 /* стилізація форми */
+
 input:placeholder-shown {
   border: none !important;
 }
